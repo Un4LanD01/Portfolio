@@ -1,0 +1,32 @@
+/* LK 4 extends shared reading styles without changing the other pages. */
+.innovation-format{font-size:.85rem;color:var(--leaf);line-height:1.7}
+.innovation-identity{margin:0 0 32px;padding:25px 30px;border-radius:22px;box-shadow:var(--shadow-sm)}
+.innovation-identity h2{font-size:1.15rem;margin:0 0 18px;letter-spacing:-.02em}
+.innovation-identity dl{margin:0}.innovation-identity dl>div{display:grid;grid-template-columns:130px 1fr;gap:20px;margin:10px 0}.innovation-identity dt{font-weight:700;color:var(--leaf)}.innovation-identity dd{margin:0;overflow-wrap:break-word}
+.innovation-detail .answer-prose .lk4-question{font-size:1.02rem;line-height:1.65;margin:0 0 18px;letter-spacing:0;color:var(--forest)}
+.lk4-question:before{content:"Pertanyaan " attr(data-question);display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--leaf);margin-bottom:8px}
+.lk4-answer-block+.lk4-answer-block{margin-top:30px;padding-top:26px;border-top:1px solid #c5d4cc}
+@media(max-width:560px){.innovation-identity{padding:22px}.innovation-identity dl>div{grid-template-columns:1fr;gap:4px;margin:14px 0}.innovation-detail .answer-prose .lk4-question{font-size:1rem}}
+@media print{.innovation-identity{padding:0;box-shadow:none;margin:18px 0}.innovation-format{font-size:10pt}.lk4-answer-block+.lk4-answer-block{padding-top:12px;margin-top:18px}.innovation-detail .answer-prose .lk4-question{font-size:11pt;color:#000}.lk4-question:before{font-size:9pt;color:#000}}
+.innovation-status{padding:26px 30px;border-radius:22px;box-shadow:var(--inset);margin:0 0 35px}
+.innovation-status .eyebrow{margin-bottom:10px}
+.innovation-status h2{font-size:1.2rem;line-height:1.4;margin:0 0 10px;letter-spacing:-.02em}
+.innovation-status p:last-child{max-width:80ch;color:var(--muted);margin:0;line-height:1.8}
+.innovation-preview{margin:35px 0 15px;padding:16px;border-radius:24px;box-shadow:var(--shadow)}
+.innovation-preview a{display:block}
+.innovation-preview img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;object-position:top;background:#fff9ec;border-radius:16px}
+.innovation-preview figcaption{padding:14px 5px 3px;font-size:.82rem;color:var(--muted)}
+.innovation-detail .answer-prose h3{font-size:1.08rem;margin:26px 0 14px;line-height:1.5;letter-spacing:-.01em}
+.innovation-points{padding-left:1.4rem;margin:0 0 22px}
+.innovation-points li{padding-left:6px;margin:0 0 14px;font-size:1rem;line-height:1.8;text-align:start;overflow-wrap:break-word}
+.innovation-points li::marker{color:var(--leaf);font-weight:700}
+.innovation-activities a{font-size:.85rem;white-space:normal}
+.innovation-evaluation{margin:8px 0 24px}
+.innovation-evaluation th:first-child{width:24%}
+.innovation-evaluation th:nth-child(2){width:37%}
+.innovation-downloads{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+.innovation-downloads a{display:flex;flex-direction:column;gap:6px;padding:22px;border-radius:18px;text-decoration:none;box-shadow:var(--shadow-sm)}
+.innovation-downloads a:hover{box-shadow:var(--inset)}
+.innovation-downloads span{font-size:.8rem;color:var(--muted);line-height:1.65}
+@media(max-width:700px){.innovation-downloads{grid-template-columns:1fr}.innovation-status{padding:22px}.innovation-preview{padding:10px}.innovation-points li{font-size:.95rem}.innovation-detail .page-actions{align-items:stretch}.innovation-detail .page-actions .button{text-align:center}}
+@media print{.innovation-status{padding:0;margin:18px 0;box-shadow:none}.innovation-status h2{font-size:13pt}.innovation-status p:last-child{font-size:10pt;line-height:1.6}.innovation-preview,.innovation-downloads{display:none}.innovation-points li{font-size:10pt;line-height:1.6}.innovation-detail .answer-prose h3{font-size:12pt;break-after:avoid}.innovation-activities a{display:none}.innovation-evaluation{min-width:0;font-size:9pt}.innovation-evaluation th,.innovation-evaluation td{padding:8px}}

@@ -56,3 +56,6 @@
     text-align-last: start;
   }
 }
+
+/* Seven-item portfolio navigation */
+@media(min-width:861px) and (max-width:1090px){.nav{gap:12px}.brand{flex-shrink:0}.brand strong{font-size:.85rem}.nav-list a{padding:9px 7px;font-size:.75rem}}
