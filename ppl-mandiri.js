@@ -4,8 +4,9 @@ if (videoButton && videoFrame) {
   videoButton.addEventListener('click', () => {
     if (!videoFrame.querySelector('iframe')) {
       const frame = document.createElement('iframe');
-      frame.src = 'https://drive.google.com/file/d/17MazYqRPv4aZrt80cgP6OgchWLRVUQ0J/preview';
-      frame.title = 'Video praktik mengajar Matematika kelas II: Bangun Ruang';
+      const videoId = videoButton.dataset.videoId || '17MazYqRPv4aZrt80cgP6OgchWLRVUQ0J';
+      frame.src = `https://drive.google.com/file/d/${encodeURIComponent(videoId)}/preview`;
+      frame.title = videoButton.dataset.videoTitle || 'Video praktik mengajar Matematika kelas II: Bangun Ruang';
       frame.allow = 'autoplay; fullscreen';
       frame.allowFullscreen = true;
       frame.referrerPolicy = 'strict-origin-when-cross-origin';
