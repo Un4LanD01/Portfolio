@@ -12,3 +12,14 @@
 @media(min-width:701px){.practice-reflection>p{text-align:justify;text-align-last:start}}
 @media(max-width:560px){.home-contact,.study-note{padding:17px}.practice-reflection{padding:22px 18px}.practice-reflection h2{font-size:1.4rem}.practice-reflection .page-actions{flex-direction:column;align-items:stretch}.study-references{padding:18px}.study-note p,.practice-reflection p{text-align:start!important}.home-contact-links{gap:4px 16px}}
 @media print{.home-contact,.study-note,.practice-reflection{box-shadow:none;background:none;border:1px solid #aaa;border-radius:0;padding:12px}.home-contact-links,.practice-reflection .page-actions{display:none}.study-note{break-inside:avoid}.study-note p,.practice-reflection p{font-size:10pt!important;line-height:1.6!important}.study-links{font-size:8pt}.study-references{border:0;padding:0}.study-references>div{display:block!important}.study-references h3{font-size:11pt}.study-references p,.study-references li{font-size:9pt}}
+
+/* One compact portrait card; preserve the original photograph's proportions. */
+.hero>.portrait-card{width:min(100%,340px);max-width:340px;justify-self:center;align-self:start;margin:36px 0 0;padding:14px;background:var(--paper);border-radius:30px;box-shadow:var(--shadow)}
+.hero>.portrait-card:before{display:none}
+.hero .portrait-frame{aspect-ratio:1063/1600;padding:0;border-radius:20px;box-shadow:none;overflow:hidden}
+.hero .portrait-frame img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.hero .portrait-card figcaption{width:100%;margin:14px 0 0;padding:15px 14px;border-radius:16px;box-shadow:var(--inset);line-height:1.5}
+.hero .portrait-card figcaption span{font-size:.65rem;letter-spacing:.08em;line-height:1.65}
+.hero .portrait-card figcaption strong{font-size:.93rem;line-height:1.55;margin-top:5px}
+@media(max-width:860px){.hero{row-gap:36px}.hero>.portrait-card{margin-top:0;width:min(100%,320px);max-width:320px}}
+@media(max-width:560px){.hero>.portrait-card{padding:12px;border-radius:26px}.hero .portrait-frame{border-radius:17px}.hero .portrait-card figcaption{margin-top:12px;padding:14px 12px}.hero .portrait-card figcaption strong{font-size:.88rem}}
